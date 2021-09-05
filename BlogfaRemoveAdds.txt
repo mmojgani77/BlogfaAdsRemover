@@ -1,15 +1,6 @@
 <!-- Written by Manoochehr Mojgani -->
 <!-- https://github.com/mmojgani77/BlogfaAdsRemover -->
 
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
-$(document).ready(function(){
-	var iv=setInterval(function(){
-		if(typeof dvad!='undefined')
-		{
-			dvad.remove();
-			clearInterval(iv);
-		}
-	},10);
-});
+var remover=setInterval(()=>{"undefined"!=typeof dvad&&(dvad.remove(),clearInterval(remover))},40);
 </script>
